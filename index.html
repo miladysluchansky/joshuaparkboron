@@ -2,90 +2,309 @@
 <html>
 <head>
   <title>Joshua Mobile Home Park</title>
+
   <style>
-    body { margin:0; font-family:Arial; background:#f8f1e7; color:#333; }
-    .hero { background:url('hero.jpg') center/cover; min-height:95vh; color:white; display:flex; align-items:center; justify-content:center; text-align:center; position:relative; }
-    .hero:before { content:""; position:absolute; inset:0; background:rgba(0,0,0,.55); }
-    .hero div { position:relative; max-width:900px; padding:30px; }
-    h1 { font-size:60px; }
-    h2 { font-size:38px; text-align:center; }
-    p { font-size:20px; line-height:1.6; }
-    .btn { background:#c48b3a; color:white; padding:15px 28px; border-radius:12px; text-decoration:none; display:inline-block; margin:10px; font-weight:bold; }
-    section { padding:70px 25px; max-width:1200px; margin:auto; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; }
-    .card { background:white; border-radius:20px; overflow:hidden; box-shadow:0 8px 25px #0002; }
-    .card img { width:100%; height:280px; object-fit:cover; }
-    .card div { padding:22px; }
-    .locations { background:#ead7bd; max-width:none; }
-    .box { background:white; padding:25px; border-radius:18px; box-shadow:0 6px 20px #0002; }
-    footer { background:#111; color:#bbb; text-align:center; padding:30px; }
+    body{
+      margin:0;
+      font-family:Arial,sans-serif;
+      background:#f8f1e7;
+      color:#333;
+    }
+
+    .hero{
+      background:url('b5c0d5e2-dd50-4a5f-b6e0-a224377f2f4a.jpg') center/cover;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      position:relative;
+    }
+
+    .hero::before{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,.55);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:900px;
+      padding:30px;
+    }
+
+    h1{
+      font-size:64px;
+      margin-bottom:20px;
+    }
+
+    h2{
+      font-size:42px;
+      text-align:center;
+      margin-bottom:25px;
+    }
+
+    p{
+      font-size:20px;
+      line-height:1.7;
+    }
+
+    .btn{
+      display:inline-block;
+      margin:10px;
+      padding:16px 30px;
+      background:#c48b3a;
+      color:white;
+      text-decoration:none;
+      border-radius:14px;
+      font-weight:bold;
+    }
+
+    section{
+      padding:80px 25px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 8px 24px rgba(0,0,0,.08);
+    }
+
+    .card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:22px;
+    }
+
+    .locations{
+      background:#ead7bd;
+      max-width:none;
+      padding:80px 25px;
+    }
+
+    .location-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .location-box{
+      background:white;
+      border-radius:18px;
+      padding:25px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+    }
+
+    footer{
+      background:black;
+      color:#aaa;
+      text-align:center;
+      padding:35px;
+    }
   </style>
 </head>
+
 <body>
 
 <div class="hero">
-  <div>
+  <div class="hero-content">
+
     <h1>Joshua Mobile Home Park</h1>
-    <p>32-space mobile home park located at 26611 Nudgent Street, Boron, California.</p>
-    <p>RV spaces available for $300/month plus electric and water. Homes available upon request.</p>
+
+    <p>
+      32-space mobile home park located at
+      26611 Nudgent Street, Boron, California.
+    </p>
+
+    <p>
+      Near Rio Tinto Borax Mine,
+      Edwards Air Force Base,
+      and Aratina Solar Center.
+    </p>
+
+    <p>
+      RV spaces available for $300/month plus electric and water.
+      Homes available upon request.
+    </p>
+
     <a class="btn" href="#contact">Request Information</a>
     <a class="btn" href="#location">Location</a>
+
   </div>
 </div>
 
 <section>
-  <h2>Quiet Desert Living in Boron</h2>
-  <p>Joshua Mobile Home Park offers affordable RV and mobile home living in a peaceful desert setting. It is ideal for residents, workers, retirees, and families looking for a quiet remote place to enjoy desert life.</p>
+
+  <h2>Quiet Desert Living</h2>
+
+  <p style="text-align:center; max-width:900px; margin:auto;">
+    Joshua Mobile Home Park offers affordable RV and mobile home living
+    in a peaceful remote desert setting ideal for workers, retirees,
+    travelers, and residents looking for a calm community atmosphere.
+  </p>
+
 </section>
 
 <section>
+
   <div class="grid">
-    <div class="card"><img src="home1.jpg"><div><h3>Mobile Home Living</h3><p>Comfortable long-term living in a calm desert community.</p></div></div>
-    <div class="card"><img src="rv1.jpg"><div><h3>RV Spaces Available</h3><p>RV spaces currently available for $300/month plus electric and water.</p></div></div>
-    <div class="card"><img src="home2.jpg"><div><h3>Homes Upon Request</h3><p>Mobile homes may be available depending on current availability.</p></div></div>
+
+    <div class="card">
+      <img src="1b34f125-f7cf-4976-be52-a5d161631e0e.jpg">
+      <div class="card-content">
+        <h3>Mobile Home Rentals</h3>
+        <p>Comfortable long-term desert living options.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="7b06f2e0-ed33-4b24-b729-7c369e1a22e0.jpg">
+      <div class="card-content">
+        <h3>RV Spaces Available</h3>
+        <p>Affordable RV spaces available now.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="3ffc5b9b-ed09-4425-b447-076e4d578cee.jpg">
+      <div class="card-content">
+        <h3>Desert Community</h3>
+        <p>Peaceful surroundings and quiet living.</p>
+      </div>
+    </div>
+
   </div>
+
 </section>
 
 <section>
-  <h2>Community Photos</h2>
+
+  <h2>Community Gallery</h2>
+
   <div class="grid">
-    <div class="card"><img src="community1.jpg"></div>
-    <div class="card"><img src="road.jpg"></div>
-    <div class="card"><img src="home3.jpg"></div>
-    <div class="card"><img src="sign.jpg"></div>
-    <div class="card"><img src="aerial1.jpg"></div>
-    <div class="card"><img src="aerial2.jpg"></div>
-    <div class="card"><img src="overview.jpg"></div>
+
+    <div class="card">
+      <img src="48eafd2b-19dd-44dc-891f-c03d69c47fe2.jpg">
+    </div>
+
+    <div class="card">
+      <img src="fa4624cf-3302-4c60-a384-26e718baa6e5.jpg">
+    </div>
+
+    <div class="card">
+      <img src="b1e47761-80ee-4521-ab65-4f40dd5e42d4.jpg">
+    </div>
+
+    <div class="card">
+      <img src="d8b4ec3c-1bec-497e-89d3-0e73bfde5154.jpg">
+    </div>
+
+    <div class="card">
+      <img src="3e5cf4a9-9438-42ce-80af-d399de463e08.jpg">
+    </div>
+
+    <div class="card">
+      <img src="90fc5f1b-5af4-4e50-887e-e38462a1db2b.jpg">
+    </div>
+
+    <div class="card">
+      <img src="bbd53e8e-e77d-4656-9da5-e6b13a277b0a.jpg">
+    </div>
+
   </div>
+
 </section>
 
 <section class="locations">
+
   <h2>Nearby Locations</h2>
-  <div class="grid">
-    <div class="box"><h3>Rio Tinto Borax Mine</h3><p>Nearby regional employer.</p></div>
-    <div class="box"><h3>Edwards Air Force Base</h3><p>Aerospace and military employment nearby.</p></div>
-    <div class="box"><h3>Aratina Solar Center</h3><p>Solar energy workforce demand in the area.</p></div>
-    <div class="box"><h3>Mojave Air & Space Port</h3><p>Aviation and aerospace employment hub.</p></div>
-    <div class="box"><h3>Barstow</h3><p>Transportation corridor and nearby services.</p></div>
-    <div class="box"><h3>Lancaster / Palmdale</h3><p>Antelope Valley employment access.</p></div>
+
+  <div class="location-grid">
+
+    <div class="location-box">
+      <h3>Rio Tinto Borax Mine</h3>
+      <p>Nearby regional employer.</p>
+    </div>
+
+    <div class="location-box">
+      <h3>Edwards Air Force Base</h3>
+      <p>Aerospace and military employment nearby.</p>
+    </div>
+
+    <div class="location-box">
+      <h3>Aratina Solar Center</h3>
+      <p>Regional workforce demand nearby.</p>
+    </div>
+
+    <div class="location-box">
+      <h3>Mojave Air & Space Port</h3>
+      <p>Aerospace and aviation employment hub.</p>
+    </div>
+
+    <div class="location-box">
+      <h3>Barstow</h3>
+      <p>Transportation corridor and services.</p>
+    </div>
+
+    <div class="location-box">
+      <h3>Los Angeles</h3>
+      <p>Approx. 1.5 hours away.</p>
+    </div>
+
   </div>
+
 </section>
 
 <section id="location">
+
   <h2>Location</h2>
-  <p style="text-align:center;">26611 Nudgent Street, Boron, California</p>
+
   <p style="text-align:center;">
-    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=26611+Nudgent+Street+Boron+California">Open in Google Maps</a>
+    26611 Nudgent Street<br>
+    Boron, California
   </p>
+
+  <p style="text-align:center;">
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=26611+Nudgent+Street+Boron+California">
+      Open in Google Maps
+    </a>
+  </p>
+
 </section>
 
 <section id="contact">
+
   <h2>Request Information</h2>
-  <p style="text-align:center;">Contact us for RV space availability, home rentals, pricing, and move-in requirements.</p>
+
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    Contact us for RV space availability,
+    mobile home rentals,
+    pricing,
+    and move-in information.
+  </p>
+
 </section>
 
 <footer>
-  © 2026 Joshua Mobile Home Park • 26611 Nudgent Street, Boron, California
+  © 2026 Joshua Mobile Home Park • Boron, California
 </footer>
 
 </body>
