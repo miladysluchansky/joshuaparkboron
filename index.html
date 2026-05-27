@@ -1,310 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Joshua Mobile Home Park</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua Mobile Home Park | Boron, California</title>
 
   <style>
-    body{
-      margin:0;
-      font-family:Arial,sans-serif;
-      background:#f8f1e7;
-      color:#333;
-    }
-
-    .hero{
-      background:url('b5c0d5e2-dd50-4a5f-b6e0-a224377f2f4a.jpg') center/cover;
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      color:white;
-      position:relative;
-    }
-
-    .hero::before{
-      content:'';
-      position:absolute;
-      inset:0;
-      background:rgba(0,0,0,.55);
-    }
-
-    .hero-content{
-      position:relative;
-      z-index:2;
-      max-width:900px;
-      padding:30px;
-    }
-
-    h1{
-      font-size:64px;
-      margin-bottom:20px;
-    }
-
-    h2{
-      font-size:42px;
-      text-align:center;
-      margin-bottom:25px;
-    }
-
-    p{
-      font-size:20px;
-      line-height:1.7;
-    }
-
-    .btn{
-      display:inline-block;
-      margin:10px;
-      padding:16px 30px;
-      background:#c48b3a;
-      color:white;
-      text-decoration:none;
-      border-radius:14px;
-      font-weight:bold;
-    }
-
-    section{
-      padding:80px 25px;
-      max-width:1200px;
-      margin:auto;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:25px;
-    }
-
-    .card{
-      background:white;
-      border-radius:20px;
-      overflow:hidden;
-      box-shadow:0 8px 24px rgba(0,0,0,.08);
-    }
-
-    .card img{
-      width:100%;
-      height:300px;
-      object-fit:cover;
-    }
-
-    .card-content{
-      padding:22px;
-    }
-
-    .locations{
-      background:#ead7bd;
-      max-width:none;
-      padding:80px 25px;
-    }
-
-    .location-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:20px;
-      max-width:1200px;
-      margin:auto;
-    }
-
-    .location-box{
-      background:white;
-      border-radius:18px;
-      padding:25px;
-      box-shadow:0 6px 18px rgba(0,0,0,.08);
-    }
-
-    footer{
-      background:black;
-      color:#aaa;
-      text-align:center;
-      padding:35px;
-    }
+    body{margin:0;font-family:Arial,sans-serif;background:#f8f1e7;color:#2f2a24}
+    .hero{background:url('b5c0d5e2-dd50-4a5f-b6e0-a224377f2f4a.jpg') center/cover;min-height:100vh;position:relative;color:white;display:flex;align-items:center;justify-content:center;text-align:center}
+    .hero:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.55)}
+    .hero-box{position:relative;z-index:2;max-width:1050px;padding:35px}
+    h1{font-size:62px;margin:10px 0}
+    h2{font-size:40px;text-align:center}
+    h3{font-size:24px}
+    p{font-size:19px;line-height:1.7}
+    .tag{letter-spacing:3px;text-transform:uppercase;color:#f5c46b;font-weight:bold}
+    .btn{display:inline-block;background:#c48b3a;color:white;padding:15px 26px;border-radius:12px;text-decoration:none;font-weight:bold;margin:8px}
+    .btn-dark{background:#2f2a24}
+    section{padding:75px 25px;max-width:1200px;margin:auto}
+    .intro-card{background:white;border-radius:24px;padding:35px;box-shadow:0 8px 25px #0002;margin-top:-70px;position:relative;z-index:5}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .card{background:white;border-radius:22px;overflow:hidden;box-shadow:0 8px 24px #0002}
+    .card img{width:100%;height:285px;object-fit:cover}
+    .card-content{padding:22px}
+    .highlight{background:#ead7bd;max-width:none}
+    .box{background:white;border-radius:18px;padding:24px;box-shadow:0 6px 18px #0002}
+    form{background:white;padding:30px;border-radius:24px;box-shadow:0 8px 25px #0002}
+    input,select,textarea{width:100%;padding:14px;margin:10px 0;border:1px solid #ccc;border-radius:10px;font-size:16px;box-sizing:border-box}
+    button{background:#c48b3a;color:white;border:0;padding:15px 25px;border-radius:12px;font-size:17px;font-weight:bold;cursor:pointer;width:100%}
+    footer{background:#111;color:#bbb;text-align:center;padding:35px}
   </style>
 </head>
 
 <body>
 
 <div class="hero">
-  <div class="hero-content">
-
+  <div class="hero-box">
+    <div class="tag">Boron, California</div>
     <h1>Joshua Mobile Home Park</h1>
-
-    <p>
-      32-space mobile home park located at
-      26611 Nudgent Street, Boron, California.
-    </p>
-
-    <p>
-      Near Rio Tinto Borax Mine,
-      Edwards Air Force Base,
-      and Aratina Solar Center.
-    </p>
-
-    <p>
-      RV spaces available for $300/month plus electric and water.
-      Homes available upon request.
-    </p>
-
-    <a class="btn" href="#contact">Request Information</a>
-    <a class="btn" href="#location">Location</a>
-
+    <p>Affordable RV spaces and mobile home living in a quiet desert community.</p>
+    <a class="btn" href="#request">Request Information</a>
+    <a class="btn btn-dark" href="#location">Location</a>
+    <a class="btn btn-dark" href="#boron-history">About Boron</a>
+    <a class="btn btn-dark" href="#contact">Contact</a>
   </div>
 </div>
 
 <section>
-
-  <h2>Quiet Desert Living</h2>
-
-  <p style="text-align:center; max-width:900px; margin:auto;">
-    Joshua Mobile Home Park offers affordable RV and mobile home living
-    in a peaceful remote desert setting ideal for workers, retirees,
-    travelers, and residents looking for a calm community atmosphere.
-  </p>
-
+  <div class="intro-card">
+    <h2>Welcome to Joshua Mobile Home Park</h2>
+    <p><strong>Joshua Mobile Home Park</strong> is a 32-space mobile home park located at <strong>26611 Nudgent Street, Boron, California</strong>.</p>
+    <p>We currently have <strong>RV spaces available for $300/month plus electric and water</strong>. Homes may also be available upon request. Home prices vary depending on the type of home, size, and availability, so please contact us for current information.</p>
+    <p>This park is ideal for people looking for a quiet, remote place to enjoy desert living while being near local work opportunities.</p>
+  </div>
 </section>
 
 <section>
-
+  <h2>Living Options</h2>
   <div class="grid">
-
     <div class="card">
-      <img src="1b34f125-f7cf-4976-be52-a5d161631e0e.jpg">
+      <img src="7b06f2e0-ed33-4b24-b729-7c369e1a22e0.jpg">
       <div class="card-content">
-        <h3>Mobile Home Rentals</h3>
-        <p>Comfortable long-term desert living options.</p>
+        <h3>RV Spaces</h3>
+        <p>RV spaces are available for $300/month plus electric and water.</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="7b06f2e0-ed33-4b24-b729-7c369e1a22e0.jpg">
+      <img src="1b34f125-f7cf-4976-be52-a5d161631e0e.jpg">
       <div class="card-content">
-        <h3>RV Spaces Available</h3>
-        <p>Affordable RV spaces available now.</p>
+        <h3>Mobile Homes</h3>
+        <p>Homes may be available upon request. Pricing varies by home type and availability.</p>
       </div>
     </div>
 
     <div class="card">
       <img src="3ffc5b9b-ed09-4425-b447-076e4d578cee.jpg">
       <div class="card-content">
-        <h3>Desert Community</h3>
-        <p>Peaceful surroundings and quiet living.</p>
+        <h3>Quiet Desert Living</h3>
+        <p>A peaceful remote setting with open skies and a small-town desert atmosphere.</p>
       </div>
     </div>
-
   </div>
+</section>
 
+<section class="highlight">
+  <h2>Nearby Locations & Workforce Demand</h2>
+  <div class="grid">
+    <div class="box"><h3>Rio Tinto Borax Mine</h3><p>Major regional employer and one of the richest borate deposits in the world.</p></div>
+    <div class="box"><h3>Edwards Air Force Base</h3><p>Aerospace, military, and contractor-related employment nearby.</p></div>
+    <div class="box"><h3>Aratina Solar Center</h3><p>Solar energy project in eastern Kern County near Boron and Desert Lake.</p></div>
+    <div class="box"><h3>Mojave Air & Space Port</h3><p>Aviation and aerospace employment hub.</p></div>
+    <div class="box"><h3>Barstow</h3><p>Transportation corridor, logistics, and services.</p></div>
+    <div class="box"><h3>Lancaster / Palmdale</h3><p>Additional aerospace, defense, and workforce access.</p></div>
+  </div>
+</section>
+
+<section id="boron-history">
+  <h2>About the Town of Boron</h2>
+  <p>Boron is an unincorporated desert community in Kern County, California. The area is known for its borax mining history, open desert landscape, and small-town atmosphere.</p>
+  <p>A large borax deposit was discovered in 1925, and mining in Boron began in 1927. Today, the Rio Tinto Borax operation remains one of the most important industries in the area.</p>
+  <p>Things to do nearby include desert sightseeing, visiting the Borax Visitor Center, exploring local desert history, and enjoying the peaceful remote lifestyle.</p>
+  <p>Jobs in the area may include mining, solar energy, aerospace, military support, logistics, maintenance, construction, and service-related work.</p>
 </section>
 
 <section>
-
   <h2>Community Gallery</h2>
-
   <div class="grid">
-
-    <div class="card">
-      <img src="48eafd2b-19dd-44dc-891f-c03d69c47fe2.jpg">
-    </div>
-
-    <div class="card">
-      <img src="fa4624cf-3302-4c60-a384-26e718baa6e5.jpg">
-    </div>
-
-    <div class="card">
-      <img src="b1e47761-80ee-4521-ab65-4f40dd5e42d4.jpg">
-    </div>
-
-    <div class="card">
-      <img src="d8b4ec3c-1bec-497e-89d3-0e73bfde5154.jpg">
-    </div>
-
-    <div class="card">
-      <img src="3e5cf4a9-9438-42ce-80af-d399de463e08.jpg">
-    </div>
-
-    <div class="card">
-      <img src="90fc5f1b-5af4-4e50-887e-e38462a1db2b.jpg">
-    </div>
-
-    <div class="card">
-      <img src="bbd53e8e-e77d-4656-9da5-e6b13a277b0a.jpg">
-    </div>
-
+    <div class="card"><img src="48eafd2b-19dd-44dc-891f-c03d69c47fe2.jpg"></div>
+    <div class="card"><img src="fa4624cf-3302-4c60-a384-26e718baa6e5.jpg"></div>
+    <div class="card"><img src="b1e47761-80ee-4521-ab65-4f40dd5e42d4.jpg"></div>
+    <div class="card"><img src="d8b4ec3c-1bec-497e-89d3-0e73bfde5154.jpg"></div>
+    <div class="card"><img src="3e5cf4a9-9438-42ce-80af-d399de463e08.jpg"></div>
+    <div class="card"><img src="90fc5f1b-5af4-4e50-887e-e38462a1db2b.jpg"></div>
+    <div class="card"><img src="bbd53e8e-e77d-4656-9da5-e6b13a277b0a.jpg"></div>
   </div>
-
-</section>
-
-<section class="locations">
-
-  <h2>Nearby Locations</h2>
-
-  <div class="location-grid">
-
-    <div class="location-box">
-      <h3>Rio Tinto Borax Mine</h3>
-      <p>Nearby regional employer.</p>
-    </div>
-
-    <div class="location-box">
-      <h3>Edwards Air Force Base</h3>
-      <p>Aerospace and military employment nearby.</p>
-    </div>
-
-    <div class="location-box">
-      <h3>Aratina Solar Center</h3>
-      <p>Regional workforce demand nearby.</p>
-    </div>
-
-    <div class="location-box">
-      <h3>Mojave Air & Space Port</h3>
-      <p>Aerospace and aviation employment hub.</p>
-    </div>
-
-    <div class="location-box">
-      <h3>Barstow</h3>
-      <p>Transportation corridor and services.</p>
-    </div>
-
-    <div class="location-box">
-      <h3>Los Angeles</h3>
-      <p>Approx. 1.5 hours away.</p>
-    </div>
-
-  </div>
-
 </section>
 
 <section id="location">
-
   <h2>Location</h2>
-
+  <p style="text-align:center;">26611 Nudgent Street, Boron, California</p>
   <p style="text-align:center;">
-    26611 Nudgent Street<br>
-    Boron, California
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=26611+Nudgent+Street+Boron+California" target="_blank">Open in Google Maps</a>
   </p>
-
-  <p style="text-align:center;">
-    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=26611+Nudgent+Street+Boron+California">
-      Open in Google Maps
-    </a>
-  </p>
-
 </section>
 
 <section id="contact">
+  <h2>Contact Information</h2>
 
+  <div class="box" style="max-width:750px;margin:auto;text-align:center;">
+    <h3>Park Manager</h3>
+    <p><strong>Amber Grijalva</strong></p>
+    <p><strong>Phone:</strong> <a href="tel:17602176918">760-217-6918</a></p>
+    <p><strong>Email:</strong> <a href="mailto:joshuapark1000@gmail.com">joshuapark1000@gmail.com</a></p>
+
+    <a class="btn" href="tel:17602176918">Call Now</a>
+    <a class="btn btn-dark" href="mailto:joshuapark1000@gmail.com">Email Us</a>
+  </div>
+</section>
+
+<section id="request">
   <h2>Request Information</h2>
+  <p style="text-align:center;">Please complete the form below for RV space, home rental, pricing, or availability information.</p>
 
-  <p style="text-align:center; max-width:800px; margin:auto;">
-    Contact us for RV space availability,
-    mobile home rentals,
-    pricing,
-    and move-in information.
-  </p>
+  <form action="mailto:joshuapark1000@gmail.com" method="post" enctype="text/plain">
+    <label>Name</label>
+    <input type="text" name="Name" required>
 
+    <label>Phone Number</label>
+    <input type="tel" name="Phone" required>
+
+    <label>Email Address</label>
+    <input type="email" name="Email" required>
+
+    <label>What type of information do you need?</label>
+    <select name="Information Requested" required>
+      <option value="">Select one</option>
+      <option>RV Space Availability</option>
+      <option>Mobile Home Availability</option>
+      <option>Pricing Information</option>
+      <option>Move-In Requirements</option>
+      <option>General Question</option>
+    </select>
+
+    <label>Message</label>
+    <textarea name="Message" rows="5"></textarea>
+
+    <button type="submit">Send Request</button>
+  </form>
 </section>
 
 <footer>
-  © 2026 Joshua Mobile Home Park • Boron, California
+  © 2026 Joshua Mobile Home Park • 26611 Nudgent Street, Boron, California • joshuapark1000@gmail.com • 760-217-6918
 </footer>
 
 </body>
